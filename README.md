@@ -6,6 +6,9 @@ Coding challenge by GrowthPlug.
   - Database - SQLite
   - Facebook Graph API
 
+### DEMO
+
+[https://still-atoll-93918.herokuapp.com/](https://still-atoll-93918.herokuapp.com/)
 
 ### Installation
 
