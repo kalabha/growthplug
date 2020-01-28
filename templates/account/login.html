@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Growth Plug|Log In</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+
+
+#Facebook{
+    background-color:#3b5998;
+    border-color:#3b5998;
+
+}
+
+body,html {
+    background-image: url('https://www.growthplug.com/wp-content/uploads/2019/09/home-form-bg.jpg');
+    height: 100%;
+}
+
+#profile-img {
+    width:200px;
+}
+.h-80 {
+    height: 80% !important;
+}
+
+    </style>
+</head>
+<body>
+{% include 'messages/alerts.html' %}
+
+<div class="container h-80" style="padding-top:15%;">
+<div class="row align-items-center h-100">
+    <div class="col-3 mx-auto">
+        <div class="text-center">
+            <img id="profile-img" class="rounded-circle profile-img-card" src="https://gp-assets-1.growthplug.com/static/myproject/img/growthplug-logo.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+                <a title="Facebook" class="socialaccount_provider facebook btn btn-block btn-login"
+               href="/accounts/facebook/login/?process=login&amp;next=%2F">
+                <div class="btn btn-primary btn-lg" title="Facebook" id="Facebook">
+                    Sign in with <b>Facebook</b>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

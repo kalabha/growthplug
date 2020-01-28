@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+<style>
+
+.simple-login-container{
+    width:300px;
+    max-width:100%;
+    margin:50px auto;
+}
+
+#Facebook{
+    background-color:#3b5998;
+    border-color:#3b5998;
+    font-size: 14px;
+}
+
+
+</style>
+{% endblock head %}
+
+(% endblock content %)
+<div class="simple-login-container">
+
+    <div class="row">
+        <h2>Are you sure you want to sign out?</h2>
+
+        <div class="col-md-12 form-group">
+            <form method="post" action="{% url 'account_logout' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary" id="Facebook">Sign Out</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+(% endblock content %)
