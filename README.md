@@ -18,6 +18,7 @@ After making virtual environment...
 
 ```sh
 $ pip install -r requirements.txt
+
 ```
 
 Create .env like .env.example in the project folder with appropriate values
